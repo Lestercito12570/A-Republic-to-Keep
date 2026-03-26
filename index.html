@@ -113,7 +113,23 @@
       margin-top: 28px;
       font-size: 0.85rem;
     }
-  </style>
+    /* Background image */
+body {
+  background-image: url("spirit76.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Beige overlay (fades it out) */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(244, 239, 228, 0.9);
+  pointer-events: none;
+  z-index: -1;
+}  </style>
 </head>
 <body>
   <main class="wrap">
