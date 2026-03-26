@@ -38,13 +38,14 @@
       position: relative;
     }
 
-    .broadside::before {
-      content: "";
-      position: absolute;
-      inset: 12px;
-      border: 1px solid rgba(22,22,22,0.35);
-    }
-
+.broadside::before {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  border: 1px solid rgba(22,22,22,0.35);
+  pointer-events: none;
+}
+    
     .printer-mark {
       max-width: 260px;
       width: 100%;
