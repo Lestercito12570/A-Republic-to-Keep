@@ -119,6 +119,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  filter: grayscale(100%) contrast(0.7) brightness(1.15);
 }
 
 /* Beige overlay (fades it out) */
@@ -126,10 +127,10 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background: rgba(244, 239, 228, 0.9);
+  background: rgba(244, 239, 228, 0.94); /* stronger wash */
   pointer-events: none;
   z-index: -1;
-}  </style>
+}}  </style>
 </head>
 <body>
   <main class="wrap">
