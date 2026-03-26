@@ -4,14 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>A Republic to Keep</title>
-  <meta name="description" content="A Republic to Keep — colonial-inspired American goods. Visit the Etsy shop." />
+  <meta name="description" content="A Republic to Keep — colonial-inspired American goods." />
   <style>
     :root {
       --ink: #161616;
       --paper: #f4efe4;
-      --paper-deep: #e8dfcf;
       --line: #2a2a2a;
-      --accent: #6e1f1f;
     }
 
     * { box-sizing: border-box; }
@@ -22,14 +20,6 @@
       background: var(--paper);
       color: var(--ink);
       font-family: Georgia, "Times New Roman", serif;
-    }
-
-    body {
-      min-height: 100vh;
-      background-image:
-        radial-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(255,255,255,0.25), rgba(0,0,0,0.02));
-      background-size: 4px 4px, 100% 100%;
     }
 
     .wrap {
@@ -43,31 +33,23 @@
       width: min(760px, 100%);
       background: rgba(255,255,255,0.28);
       border: 2px solid rgba(22,22,22,0.88);
-      box-shadow:
-        0 0 0 6px rgba(22,22,22,0.05),
-        0 18px 45px rgba(0,0,0,0.10);
       padding: 42px 28px 34px;
       text-align: center;
       position: relative;
     }
 
-    .broadside::before,
-    .broadside::after {
+    .broadside::before {
       content: "";
       position: absolute;
       inset: 12px;
       border: 1px solid rgba(22,22,22,0.35);
-      pointer-events: none;
     }
 
     .printer-mark {
       max-width: 260px;
       width: 100%;
-      height: auto;
-      display: block;
       margin: 0 auto 26px;
-      mix-blend-mode: multiply;
-      filter: contrast(1.03);
+      display: block;
     }
 
     .kicker {
@@ -79,11 +61,11 @@
 
     .logo {
       margin: 0;
-      line-height: 1.05;
       text-transform: uppercase;
       letter-spacing: 0.09em;
       font-weight: 700;
       font-size: clamp(2rem, 6vw, 4.2rem);
+      line-height: 1.05;
     }
 
     .logo .small {
@@ -93,104 +75,51 @@
     }
 
     .rule {
-      width: min(360px, 78%);
+      width: 60%;
       height: 1px;
       background: var(--line);
-      margin: 20px auto 18px;
-      opacity: 0.9;
+      margin: 20px auto;
     }
 
     .city {
-      margin: 0;
-      font-size: clamp(0.95rem, 2.1vw, 1.15rem);
       letter-spacing: 0.34em;
       text-transform: uppercase;
     }
 
     .year {
-      margin: 18px 0 0;
-      font-size: 0.95rem;
+      margin-top: 10px;
       letter-spacing: 0.22em;
     }
 
     .copy {
       max-width: 560px;
-      margin: 30px auto 0;
-      font-size: 1.06rem;
-      line-height: 1.75;
-    }
-
-    .actions {
-      margin-top: 30px;
-      display: flex;
-      justify-content: center;
-      gap: 14px;
-      flex-wrap: wrap;
+      margin: 30px auto;
+      line-height: 1.7;
     }
 
     .button {
-      appearance: none;
-      border: 1px solid var(--ink);
-      background: var(--ink);
-      color: var(--paper);
-      text-decoration: none;
+      display: inline-block;
       padding: 14px 22px;
+      text-decoration: none;
       text-transform: uppercase;
       letter-spacing: 0.16em;
-      font-size: 0.84rem;
-      transition: transform 160ms ease, background 160ms ease, color 160ms ease, border-color 160ms ease;
-    }
-
-    .button:hover {
-      transform: translateY(-1px);
-      background: #000;
-    }
-
-    .button.secondary {
-      background: transparent;
-      color: var(--ink);
-    }
-
-    .button.secondary:hover {
-      background: rgba(22,22,22,0.06);
+      border: 1px solid var(--ink);
+      background: var(--ink);
+      color: white;
     }
 
     footer {
       margin-top: 28px;
-      font-size: 0.88rem;
-      letter-spacing: 0.06em;
-      opacity: 0.82;
-    }
-
-    @media (max-width: 640px) {
-      .broadside {
-        padding: 32px 18px 28px;
-      }
-
-      .broadside::before,
-      .broadside::after {
-        inset: 9px;
-      }
-
-      .city {
-        letter-spacing: 0.22em;
-      }
-
-      .copy {
-        font-size: 1rem;
-        line-height: 1.65;
-      }
-
-      .button {
-        width: 100%;
-      }
+      font-size: 0.85rem;
     }
   </style>
 </head>
 <body>
   <main class="wrap">
-    <section class="broadside" aria-label="A Republic to Keep landing page">
-      <img class="printer-mark" src="logo.png" alt="A Republic to Keep colonial printer's mark" />
+    <section class="broadside">
+
+      <!-- ADD YOUR LOGO FILE NAME HERE -->
+      <img class="printer-mark" src="logo1.ARTK.png" alt="A Republic to Keep" />
 
       <p class="kicker">Colonial-Inspired Goods</p>
 
@@ -199,28 +128,26 @@
         <span class="small">to Keep</span>
       </h1>
 
-      <div class="rule" aria-hidden="true"></div>
+      <div class="rule"></div>
+
       <p class="city">Philadelphia</p>
       <p class="year">• 1787 •</p>
 
       <p class="copy">
-        Thoughtful American goods inspired by first principles, early print culture, and the spirit of Philadelphia.
-        Visit the shop to browse the collection.
+        Thoughtful American goods inspired by first principles, early print culture,
+        and the spirit of Philadelphia. Visit the shop to browse the collection.
       </p>
 
-      <div class="actions">
-        <a class="button" href="https://www.etsy.com/shop/YOURSHOPNAME" target="_blank" rel="noopener noreferrer">Visit the Etsy Shop</a>
-        <a class="button secondary" href="mailto:hello@example.com">Contact</a>
-      </div>
+      <!-- UPDATE YOUR ETSY LINK HERE -->
+      <a class="button" href="https://www.etsy.com/shop/YOURACTUALSHOP" target="_blank">
+        Visit the Collection
+      </a>
 
       <footer>
-        © <span id="year"></span> A Republic to Keep
+        © 2026 Garden Shed Clay LLC. All rights reserved.
       </footer>
+
     </section>
   </main>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
